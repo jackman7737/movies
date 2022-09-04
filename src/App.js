@@ -1,39 +1,12 @@
-import NavBar from './components/NavBar';
-import Main from './components/Main'
-import {Switch, Redirect, Route} from 'react-router-dom';
-import Login from './components/Login'
-import Home from './components/Home'
-import New from './components/New'
-import PageNotFound from './components/PageNotFound'
-
+// asset import 
+import './App.css';
+// import Todo from "./TodoComponent/Todo";
+import Movies from "./moviesComponent/Movies";
 function App() {
   return (
-    <>
-      <NavBar></NavBar>
-      {/* <Main></Main> */}
-
-      <Switch>
-        <Route path="/home">
-            <Home></Home>
-        </Route>
-
-        <Route path="/login">
-            <Login></Login>
-        </Route>
-
-        <Route path="/new">
-            <New></New>
-        </Route>
-
-        <Redirect from="/" exact to="/home"></Redirect>
-
-        <Route>
-          <PageNotFound></PageNotFound>
-        </Route>
-
-      </Switch>
-    </>
+    // <Todo></Todo>
+    <Movies></Movies>
   );
 }
-
+// default -> need to export App component 
 export default App;
